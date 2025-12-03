@@ -1,0 +1,13 @@
+/detector/selectInsect drosophila
+
+/run/initialize
+
+
+/generator/setMonochromatic true
+/generator/setPhotonFlux 9.37e11 # photons/mm²/s
+/generator/setMonoEnergy 15.2 keV
+
+/output/setFileNamePrefix dose_mono_
+
+/random/setSeeds 42 8675309
+/run/beamOn 10000000

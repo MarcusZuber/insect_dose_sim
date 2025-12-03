@@ -1,0 +1,13 @@
+/detector/selectInsect sitophilus
+
+/run/initialize
+
+
+/generator/setMonochromatic false
+/generator/setSpectrumFile image_filtered_wb.txt
+/generator/setPhotonFlux 1.36e13 # photons/mm²/s
+
+/output/setFileNamePrefix dose_wb_
+
+/random/setSeeds 42 8675309
+/run/beamOn 10000000
